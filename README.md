@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/moesif-alexa-skills-nodejs.png?compact=true&stars=true)](https://nodei.co/npm/moesif-alexa-skills/)
 
-[![Built For express][ico-built-for]][link-built-for]
+[![Built][ico-built-for]][link-built-for]
 [![Software License][ico-license]][link-license]
 [![Source Code][ico-source]][link-source]
 

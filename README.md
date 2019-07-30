@@ -6,9 +6,10 @@
 [![Software License][ico-license]][link-license]
 [![Source Code][ico-source]][link-source]
 
-Alexa Skills Middleware (NodeJS) to automatically log _incoming_ requests/responses from AWS Lambda functions
-and send to Moesif for debugging and API analytics. Designed for AWS Lambda functions that use the Alexa Skills Kit as a trigger.
+Alexa Skills Middleware (NodeJS) to automatically log API calls from your AWS Lambda functions
+and sends to [Moesif](https://www.moesif.com) for API analytics and log analysis. 
 
+Designed for AWS Lambda functions that use the Alexa Skills Kit as a trigger.
 
 This middleware expects the
 [Alexa skills format.](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference)
@@ -37,7 +38,7 @@ The following shows how import Moesif and use:
 const moesif = require('moesif-alexa-skills');
 
 const moesifOptions = {
-    applicationId: 'Your Moesif application_id',
+    applicationId: 'Your Moesif Application Id',
 };
 
 exports.handler = function (event, context, callback) {
@@ -55,8 +56,13 @@ exports.handler = moesif(moesifOptions, exports.handler);
 
 ```
 
-### 2. Enter Moesif Application Id.
-You can find your Application Id from [_Moesif Dashboard_](https://www.moesif.com/) -> _Top Right Menu_ -> _App Setup_
+### 2. Enter Moesif Application Id
+Your Moesif Application Id can be found in the [_Moesif Portal_](https://www.moesif.com/).
+After signing up for a Moesif account, your Moesif Application Id will be displayed during the onboarding steps. 
+
+You can always find your Moesif Application Id at any time by logging 
+into the [_Moesif Portal_](https://www.moesif.com/), click on the top right menu,
+ and then clicking _Installation_.
 
 ## Repo file structure
 
